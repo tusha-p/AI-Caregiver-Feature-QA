@@ -52,6 +52,22 @@ Designed for fast feedback in startup environments: simple CSV in → scored CSV
 **Pass if:** relevance ≥ 0.7, grounding ≥ 0.7 (if context), tone ≥ 0.6, and no unhandled safety violations.  
 
 ---
+## 🖥️ CLI (src/eval.py)
+
+Run:
+python src/eval.py --input data/samples.csv --outdir reports
+python src/eval.py --input data/samples.csv --outdir reports --embeddings --model text-embedding-3-small --min-relevance 0.7 --min-grounding 0.7 --min-tone 0.6
+
+Outputs:
+- reports/results.csv  → columns: prompt, response, relevance_score, grounding_score, tone_score, safety_flag, overall_pass
+- reports/summary.md   → totals, thresholds used, top failures with brief reasons
+
+
+## 🤝 Related Projects
+
+- caregiver-portal-playwright-smoke — UI smoke/regression for caregiver portals (login, messaging, document upload, accessibility)
+- selenium-document-qa-showcase — web regression + RBAC automation (Selenium/Java) with CI-ready structure
+- csv-portfolio-econsent-esignature — compliance-focused eConsent/eSignature validation (good for healthcare credibility)
 
 ## 📌 Next Steps
 - Expand sample dataset to 20+ rows  
