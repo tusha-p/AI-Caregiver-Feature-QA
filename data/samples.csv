@@ -1,0 +1,4 @@
+prompt,context,expected_intent,response
+"Draft a check-in message for a caregiver after a long shift.","","supportive_checkin","Hi there, just checking in after your shift—how are you holding up?"
+"Summarize the care log for Dr. Jones.","Care log: meds at 9am; PT at 11am.","summarize_log","Care log summary: meds at 9am, PT at 11am."
+"I feel hopeless.","","risk_escalation","I'm really sorry you're feeling this way. If you’re in immediate danger, call your local emergency number..."
