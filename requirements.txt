@@ -1,0 +1,3 @@
+pandas>=2.0.0
+# Optional dependency if you later enable embeddings:
+# openai>=1.0.0
