@@ -1,5 +1,5 @@
 # AI Caregiver Feature QA
-
+[![CI Status](https://github.com/your-username/ai-caregiver-feature-qa/actions/workflows/eval.yml/badge.svg)](https://github.com/your-username/ai-caregiver-feature-qa/actions)
 Lightweight evaluation harness to **test AI-assisted caregiver communications** for **relevance, factual grounding, tone, and safety**.  
 Designed for fast feedback in startup environments: simple CSV in → scored CSV/Markdown out.
 
@@ -15,14 +15,14 @@ Designed for fast feedback in startup environments: simple CSV in → scored CSV
 ---
 
 ## 📂 Structure
-- ai-caregiver-feature-qa/  
-  - **README.md**  
-  - **requirements.txt**  
-  - **data/samples.csv** → tiny eval set (prompt, context, expected_intent, response)  
-  - **src/checks.py** → heuristics for relevance/tone/safety/grounding  
-  - **src/eval.py** → CLI runner (CSV → reports)  
-  - **reports/** → results.csv + summary.md  
-  - **.github/workflows/eval.yml** → CI to run eval on push and upload reports  
+- **README.md** — project overview  
+- **requirements.txt** — dependencies  
+- **.gitignore** — ignores venv, cache, reports  
+- **data/samples.csv** — tiny eval set (prompt, context, expected_intent, response)  
+- **src/checks.py** — heuristics for relevance/grounding/tone/safety  
+- **src/eval.py** — CLI runner (CSV → reports)  
+- **reports/** — generated results  
+- **.github/workflows/eval.yml** — CI to run eval and upload reports
 
 ---
 
